@@ -236,8 +236,11 @@ header p {
   align-items: center;
   text-transform: capitalize;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
+  box-orient: vertical;
   display: -webkit-box;
+  display: box;
   overflow: hidden;
 }
 
@@ -261,10 +264,13 @@ header p {
 
 .repo p {
   font-size: 0.8rem;
-  margin-bottom: 1.2rem;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.5;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  display: -webkit-box;
+  display: box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;

@@ -1,3 +1,4 @@
+
 :root {
   --bg-gradient: linear-gradient(135deg, #1a1c2c 0%, #4a3b78 100%);
   --card-bg: rgba(255, 255, 255, 0.09);
@@ -103,7 +104,64 @@ header p {
   margin: 0 auto;
 }
 
-/* Masonry layout with enhanced styling */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.search-container input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--text-light);
+  font-size: 1rem;
+  width: 300px;
+  /* margin-right: 0.5rem; */
+}
+
+.search-container input:focus-visible {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 5px var(--glow-color);
+}
+
+
+/* Style the placeholder */
+.search-container input#search::placeholder {
+  animation: placeholderAnimation 0.5s infinite alternate;
+  color: #bb97f0d7;
+}
+.search-container span{
+  font-size: 0.7rem;
+  color: #fff;
+  margin-left: 0.5rem;
+  opacity: 0.7;
+  position: absolute;
+  right: 6px;
+  background-color: #ffffff28;
+  padding: 0.2rem 0.3rem;
+  border-radius: 3px;
+}
+
+/* .search-container button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-container button:hover {
+  background: var(--glow-color);
+} */
+
 #repo-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -137,11 +195,9 @@ header p {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0) 80%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 80%);
   transform: rotate(30deg);
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -192,6 +248,7 @@ header p {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
@@ -303,6 +360,7 @@ footer:after {
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);

@@ -281,6 +281,7 @@ header p {
   justify-content: space-between;
   font-size: 0.9rem;
   padding-top: 1rem;
+  margin-top:1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
 }

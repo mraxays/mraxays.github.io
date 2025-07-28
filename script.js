@@ -55,6 +55,7 @@ let allRepos = []; // Store all repos globally
 const username = "mraxays";
 const pinned = [
   "clipxjs",
+  "clipx-web",
   "node-express-ejs-tailwindcss-starter",
   "dev-notes",
   "portfolio",

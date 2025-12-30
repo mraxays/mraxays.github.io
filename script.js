@@ -54,6 +54,7 @@ let allRepos = []; // Store all repos globally
 
 const username = "mraxays";
 const pinned = [
+  "co-invoice",
   "clipxjs",
   "clipx-web",
   "node-express-ejs-tailwindcss-starter",
@@ -247,3 +248,4 @@ document.getElementById("search").addEventListener("input", function () {
     document.getElementById("change-key").textContent = "K";
   }
 });
+
